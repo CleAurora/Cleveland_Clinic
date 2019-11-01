@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, {Fragment} from 'react';
+import React, {Fragment, Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,53 +24,55 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App = () => {
-  return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      medicos: [],
+    };
+  }
+
+  componentDidMount() {
+    this._carregarMedicos();
+  }
+
+  _carregarMedicos = async () => {
+    await fetch('http://localhost:5000/api/medicos')
+      .then(resposta => resposta.json())
+      .then(data => this.setState({ medicos: data }))
+      .catch(erro => console.warn(erro));
+  };
+
+   render() {
+    return (
+      <Fragment>
+        <Text>Medicos</Text>
+        <FlatList
+          data={this.state.medicos}
+          keyExtractor={item => item.IdMedico}
+          renderItem={({ item }) => (
+            <View>
+              <Text>{item.Nome}</Text>
+              <Text>{item.DataNascimento}</Text>
+              <Text>{item.CRM}</Text>
+              <Text>{item.Ativo}</Text>
             </View>
           )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </Fragment>
-  );
-};
+        />
+      </Fragment>
+
+    );
+  }
+
+}
+
+// const App = () => {
+//   return (
+//     <Fragment>
+//       <Text>Teste</Text>
+//     </Fragment>
+//   );
+// };
 
 const styles = StyleSheet.create({
   scrollView: {

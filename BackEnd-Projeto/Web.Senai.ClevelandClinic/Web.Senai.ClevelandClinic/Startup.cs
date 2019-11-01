@@ -26,6 +26,7 @@ namespace Web.Senai.ClevelandClinic
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseMvc();
             //app.Run(async (context) =>
             //{
