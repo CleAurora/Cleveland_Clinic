@@ -12,3 +12,17 @@ C:\Users\45579480814\Desktop\ProjetoClinica\Web.Senai.ClevelandClinic\Web.Senai.
 C:\Users\45579480814\Desktop\ProjetoClinica\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.pdb
 C:\Users\45579480814\Desktop\ProjetoClinica\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.dll
 C:\Users\45579480814\Desktop\ProjetoClinica\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.pdb
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.deps.json
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.runtimeconfig.json
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.runtimeconfig.dev.json
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.dll
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\bin\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.pdb
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.csprojAssemblyReference.cache
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.csproj.CoreCompileInputs.cache
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.RazorAssemblyInfo.cache
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.RazorAssemblyInfo.cs
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.AssemblyInfoInputs.cache
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.AssemblyInfo.cs
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.RazorTargetAssemblyInfo.cache
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.dll
+C:\Users\34132336883\Desktop\SENAI\GitHub\Cleveland_Clinic\BackEnd-Projeto\Web.Senai.ClevelandClinic\Web.Senai.ClevelandClinic\obj\Debug\netcoreapp2.2\Web.Senai.ClevelandClinic.pdb

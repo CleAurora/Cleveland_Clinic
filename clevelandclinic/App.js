@@ -6,26 +6,23 @@
  * @flow
  */
 
-import React, {Fragment, Component} from 'react';
+import React, { Fragment, Component } from 'react';
+import { isTSEnumMember } from '@babel/types';
+
+
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
+  FlatList
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-class App extends Component{
-  constructor(){
+class App extends Component {
+  constructor() {
     super();
     this.state = {
       medicos: [],
@@ -37,25 +34,25 @@ class App extends Component{
   }
 
   _carregarMedicos = async () => {
-    await fetch('http://localhost:5000/api/medicos')
+    await fetch('http://192.168.3.192:80/api/medicos')
       .then(resposta => resposta.json())
       .then(data => this.setState({ medicos: data }))
       .catch(erro => console.warn(erro));
   };
 
-   render() {
+  render() {
     return (
       <Fragment>
         <Text>Medicos</Text>
         <FlatList
           data={this.state.medicos}
-          keyExtractor={item => item.IdMedico}
-          renderItem={({ item }) => (
+          keyExtractor={item => isTSEnumMember.IdMedico}
+          renderItem={ ({item}) => (
             <View>
-              <Text>{item.Nome}</Text>
-              <Text>{item.DataNascimento}</Text>
-              <Text>{item.CRM}</Text>
-              <Text>{item.Ativo}</Text>
+              <Text>{item.nome}</Text>
+              <Text>{item.dataNascimento}</Text>
+              <Text>{item.crm}</Text>
+              <Text>{item.ativo}</Text>
             </View>
           )}
         />
@@ -66,22 +63,10 @@ class App extends Component{
 
 }
 
-// const App = () => {
-//   return (
-//     <Fragment>
-//       <Text>Teste</Text>
-//     </Fragment>
-//   );
-// };
+
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
+
   body: {
     backgroundColor: Colors.white,
   },
@@ -89,28 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 32,
     paddingHorizontal: 24,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+
 });
 
 export default App;
